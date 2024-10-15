@@ -44,6 +44,10 @@ def daily_min(data):
     """
     return np.min(data, axis=0)
 
+def compute_standard_deviation(data):
+    """Computes and returns standard deviation for data."""
+    return {'standard deviation': np.std(data, axis = 0)}
+
 def patient_normalise(data):
     """
     Normalise patient data from a 2D inflammation data array.
